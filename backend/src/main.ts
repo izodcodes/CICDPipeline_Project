@@ -10,7 +10,7 @@ import { TransformInterceptor } from './modules/common/interceptors/TransformInt
 import * as express from 'express';
 import { ErrorFilter } from './modules/errors/error.filter';
 
-async function bootstrap() {
+async\ function bootstrap() {
   const logger = new AppLogger();
   logger.info(`NodeJs Version ${process.version}`);
   logger.info(JSON.stringify(process.env));
@@ -25,7 +25,7 @@ async function bootstrap() {
   const options = new DocumentBuilder()
     .setTitle('Glee2')
     .setDescription('Glee2 API')
-    .setVersion('1.q')
+    .setVersion('1.0')
     .addTag('customTag')
     .setBasePath(apiVersionPrefix)
     .addBearerAuth()x // here is an intentional compile error. Remove the "x" and the backend should compile.

@@ -25,7 +25,7 @@ async function bootstrap() {
   const options = new DocumentBuilder()
     .setTitle('Glee2')
     .setDescription('Glee2 API')
-    .setVersion('1.0')
+    .setVersion('1.q')
     .addTag('customTag')
     .setBasePath(apiVersionPrefix)
     .addBearerAuth()x // here is an intentional compile error. Remove the "x" and the backend should compile.
